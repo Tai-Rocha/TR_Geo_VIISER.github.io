@@ -1,0 +1,30 @@
+---
+title: 'VI rgee : um pacote em R para acessar GEE'
+subtitle: "Code em R com estudos de casos usando o pacote rgee"
+author: "Tainá Rocha"
+date: '2022-05-01'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Este código assume que o usuários já possui o pacote rgee instalado. As instruções para instalação estão na [apresentação](link)
+
+
+#### Lembre-se sempre de inciar carregando o pacote via:
+
+```{r}
+library(rgee)
+```
+
+#### Alterativamente você pode usar `rgee::função_do_rgee`, o que dispensa o `library (rgee)`. Veja o exemplo abaixo com o comando para iniciar o rgee
+
+```{r inicie o rgee}
+rgee::ee_Initialize()
+```
+
+#### Adicionanado os dados de interesse a serem analisado. 
+
+

@@ -1,0 +1,219 @@
+---
+title: "VI SER<br><br>  Manipulação e estatística básica de dados geoespaciais no R" 
+author: "Tainá Rocha"
+role: Environmental and Biodiversity Data Scientist <br> Biologist | MSc. in Environmental biology | PhD. in Zoology 
+org: "  "
+date: "24-26 de Maio, 2023"
+output:
+  xaringan::moon_reader:
+    anchor_sections: FALSE
+    css: ["default", "css/theme.css", "css/fonts.css"]
+    seal: false 
+    lib_dir: libs
+    nature:
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+      highlightStyle: solarized-light
+      highlightLanguage: ["r", "css", "yaml"]
+      highlightLines: true
+      countIncrementalSlides: true
+      ratio: "16:9"
+---
+
+class: title-slide, left, middle
+background-image: url("images/GE.png")
+background-position: 85% 50%
+background-size: 30%
+background-color: #F9F8F3
+
+.pull-left[
+
+# `r rmarkdown::metadata$title`
+
+### `r rmarkdown::metadata$author`
+
+### `r rmarkdown::metadata$org`
+
+### `r rmarkdown::metadata$date`
+]
+
+???
+
+Olá me chamo Tainá, sou bióloga de formação, fiz um mestrado em biologia ambiental pela UFPA e doutorado em zoologia pelo Museu Emílio Goeldi. Atualmente sou pesquisadora, eu atuo no lab de universidade estadual da Florida. E também  sou consultora do Centro Nacional de Conservação da Flora Brasil do Jardim Botânico do RJ.
+E resumidamente eu faço pesquisas com foco em biodiversidade e mudanças globais (principalmente mudanças climáticas). E uma ferramenta que tenho explorado é o rgee (um pacote em R para acessa o plataforma Earth Engine). Então a ideia é compartilhar com vocês essa experiência.  
+
+---
+class: middle, center
+
+# Roteiro
+<br>
+
+.pull-left[
+
+<img style="border-radius: 10%; object-fit: cover;" src="https://pbs.twimg.com/media/EgqKANjVkAEVDtb.jpg" width="350px" height="350px"/>
+
+]
+
+.pull-right[
+<br>
+<center> O que são e quais tipos de geoespaciais </center> 
+<br>
+<center>  Principais pacotes para manipualações deste tipo de dado </center>
+<br>
+<center>  Bases de dados </center>
+<br>
+<center> Estudos de casos (No Rstudio)</center>
+
+]
+???
+
+Então, vou começar falando brevemente sobre o que é o Google Earth Engine, depois o rgee e o fluxo de trabalho do pacote, e fecho com estudos de caso no R
+---
+## O que são dados geoespaciais ?
+
+
+---
+## Tipos de dados geoespaciais 
+#### Dados vetoriais
+
+Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos associadas. 
+.pull-center[
+```{r vetor, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics("images/Vetor.png")
+```
+]
+.pull-right[
+<br>
+<br>
+<br>
+<br>
+
+]
+---
+#### Dados matriciais. Conjunto de células/pixels (matriz). 
+.pull-center[
+```{r rasterM, echo=FALSE, out.width="70%", fig.align="center"}
+knitr::include_graphics("images/res.png")
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+---
+#### Principais pacotes 
+
+```{r res, echo=FALSE, out.width="62%", fig.align="center"}
+knitr::include_graphics("images/res.png")
+```
+???
+- Pra exemplificar isso essa figura mostra dados to tipo raster, dados matricias. E Basicamente é uma imagem composta por pixeis, onde cade pixel carrega uma informação, nesse caso aqui é informaçõa de temperatura, ou seja eu tenho valores de temperatura para cada pixel.  E numa resolução baixa/grosseira os pixeis são maiores, mas estão menor quantidade, ou seja eu vou ter poucos valores para serem analisados ou processados. Já um dados em alta resolução número de pixeis aumenta exponencialmente, e aí a gente passa a ter muito valores para analisar e processar.... o que gera uma demanda por alta perfomance. E daí a importância da plataforma como Engine que te oferece gratuitamente essa infraestrutura. 
+---
+#### Bases de dados
+
+---
+#### Estudos de caso
+
+#### Exemplos práticos, código disponível no [Github](https://github.com/Tai-Rocha/VII_SER/blob/main/R/VII%20SER.R) 
+.pull-center[
+<iframe src="https://giphy.com/embed/3o85xsrY5PHwMjtKz6" width="550" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/vulture-3o85xsrY5PHwMjtKz6"></a></p>
+]
+---
+#### Referências
+
+- Aybar, C., Wu, Q., Bautista, L., Yali, R., & Barja, A. (2020). rgee: An R package for interacting with Google Earth Engine. Journal of Open Source Software, 5(51), 2272.
+
+- [Documentação](https://cran.r-project.org/web/packages/rgee/vignettes/rgee01.html)
+
+- [Tutorial](http://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/ex_rgee.html)
+
+- [Repositório](https://github.com/r-spatial/rgee)
+
+- [rgeeExtra](https://r-earthengine.com/rgeeExtra/), extensão para o rgee 
+
+- [rgee examples](https://csaybar.github.io/rgee-examples/)
+
+- [Código](https://github.com/Tai-Rocha/VI_SER_talk.github.io/blob/main/R/rgee_exemplos.R),estudos de caso
+???
+ - Nas referências eu deixei vários conteúdos com informações mais detalhadas.
+ - E agora eu vou pro R , mostrar um pouco o que dá pra fazer com o rgee.
+
+---
+name: hello
+class: middle, center, inverse
+
+
+### `r rmarkdown::metadata$author`
+
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/11633554?v=4" width="150px"/>
+
+### `r rmarkdown::metadata$role`
+
+### `r rmarkdown::metadata$org`
+
+[`r fontawesome::fa("github")` @Tai-Rocha](https://github.com/Tai-Rocha)    
+[`r fontawesome::fa("twitter")` @Tai_Rocha_](https://twitter.com/Tai_Rocha_)   
+[`r fontawesome::fa("link")` tairocha.netlify.app](https://tairocha.netlify.app/)
+
+???
+
+- Conta do Google com o Earth Engine ativado
+
+- Python >= v3.5
+
+- EarthEngine Python API (Python package)
+
+???
+
+### Esse é o roteiro do código:
+1- Eu vou falar das instalações 
+2- Falerei também das funções que precisam ser executadas sempre inciarmos um seção no R/Rstudio e vou já aporveitar p/mostrar a sintaxe da pacote
+3- Termino com 3 estudos de caso. Su eu me prolongar vou me ater a 2 estudos de caso, mas eu está com estudos de caso. 
+
+### Sobre as instalações, existem dois requisitos:
+1- Conta no Google com Earth Engine ativado
+2- E também ter o Python instalado na sua máquina na versão >= v3.5
+
+- Com esses requisitos, já se pode executar no R ou Rstudio com o install.packages rgee para primeira parte da instalação. No geral esse comando só é necessaŕio uma vez, pq uma vez instalado, ele fica na sua máquina. A menos que vc formate seu computador ou reinstale o R e situações do tipo. Inclusive eu não vou executar esse comando porque rgee já está instalado aqui na minha máquina.
+
+- Porém, pra conseguir usar plenamente o rgee, ou seja, usar todas funções, outras instalações são necessárias. E essas instalações se fazem com uma função do próprio rgee ee_install que no geral também só precisa ser executada uma vez. E também não vou executar esse comando. Mas só pra saber do que se trata, o ee_install cria um ambiente virtual phtyon para instalar as dependencias necessárias. E são elas Numpy e ee.
+
+- Detalhes sobre a instalaçao disponíveis nas referências da apresentação
+
+### Segunda parte
+Essa segunda parte é bem curtinha. É SÓ pra vocẽs terem em mente que existem algumas funções que precisamos executar sempre, nesse caso, a cada vez que você abre e inicia uma nova seção do R e Rstudio  
+
+o library é o mais óbvio porque carrega o pacote que já instalado, mas eu costumo usar a sintaxe rgee::seguido da função e isso dispensa o carregamente via library. Mas o usuário fica avonatde pra usar o que preferir.
+
+Então pra turma do library, além de carregar o pacote, sempre q inciar uma seção e for usar o rgee
+
+é de bom tom começar com rgee:: ee_chech... que vfará um check da dependecia em phtyon. Executando  esse comando, aqui esta tudo ok ele me diz q está tudo ok ... ou seja, teoricanete eu vou consegui usar todas a funções.
+
+O outro comando é ee_Initialize e esse aqui é orbigatŕoio cada vez vc abre ser R/Rstudio... você só vai conseguir usar o rgee com esse comando. Vamos dar uma olhada no que faz esse comando.... o ee-intitilaize nada mais é do que uma autenticação para autorizar o acesso do rgee aos serviços do Earth Engine, Google drive, google cloud ... e isso pq as opções para salvar os resultados das suas análises é via google drive ou cloud storage.
+
+Bom dito isso, vamos executar o comando para começar usar o rgee.
+quando está tudo verdinho é pq está tudo ok. Então podemos começar. 
+
+E eu vou começar mostrando a sintaxe do rgee.
+Você verão que todas as funções do rgee omeção com ee_  e como eu ja carreguei o pacote se eu digitar esse prefixo aparece essa caixa com todas as funções do pacote.
+
+Outra maneira como já mostrei é usando rgee:: e bovamente abre a caixa com todas as funções, mas observem que agora existe uma outra classe de função que começa com ee, na verdade veremos que é ee$ifrão. Mas só pra entender melhor a diferença o eeSifrão são as funções originais do Earth Engine, já as funções ee_ são nativamente em R.
+
+E só pra vocês verem aqui nesse exemplo ... essas funções tem instancias. Por exemploo Classifer que uma função para classifcação supervsionada...e aí vcê pode acessar diferntes classificadores por exemplo o maxente . e ai vcê entra com argumentos desse clafficador os parãmetros.
+
+o ee_ e como o pacote já está carregado e abre automaticamete a caixa mostrando todas as funções
+
+### E agora finalemnte chegamos nos estudos de caso onde veremos o uso do rgee na vida real e sua utilidade. 
+
+Alguns são exemplo da documentão outros são modifcados, mas exemplo sã exemplos que usei relamente nas minhas alíses pricnipamen o estudo de caso 1 .
+
+
