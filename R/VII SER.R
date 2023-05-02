@@ -6,6 +6,7 @@
 
 # Estudo de caso 1 : Espacialização e vizualização de dados demstamento ao longo dos anos
 
+
 # Pacotes/bibliotecas a s
 
 library(dplyr) # Manipualação de dataframes 
@@ -67,6 +68,8 @@ bioma = geobr::read_biomes(year = 2019,  simplified = TRUE) |>
   
 
 ## Read mapbiomas data 
+
+## Mapbiomas https://mapbiomas.org/estatisticas
 
 mapbiomas = readr::read_csv("data-raw/TABELA_GERAL_COL7_MAPBIOMAS_DESMAT_VEGSEC_UF_Muni_Biome_aba.csv") 
 
