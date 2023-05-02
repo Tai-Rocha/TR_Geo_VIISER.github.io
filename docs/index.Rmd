@@ -74,7 +74,17 @@ Então, vou começar falando brevemente sobre o que é o Google Earth Engine, de
 ---
 ## O que são dados geoespaciais ?
 
+.pull-left[
+```{r geodata, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics("images/geodata.png")
+```
+]
 
+.pull-center[
+<br>
+<br>
+O que define um dado espacial é presença do componente espacial, ou seja, informações geográficas; georreferencias de determinando local no globo.
+]
 ---
 ## Tipos de dados geoespaciais 
 #### Dados vetoriais
@@ -118,7 +128,66 @@ knitr::include_graphics("images/res.png")
 ???
 - Pra exemplificar isso essa figura mostra dados to tipo raster, dados matricias. E Basicamente é uma imagem composta por pixeis, onde cade pixel carrega uma informação, nesse caso aqui é informaçõa de temperatura, ou seja eu tenho valores de temperatura para cada pixel.  E numa resolução baixa/grosseira os pixeis são maiores, mas estão menor quantidade, ou seja eu vou ter poucos valores para serem analisados ou processados. Já um dados em alta resolução número de pixeis aumenta exponencialmente, e aí a gente passa a ter muito valores para analisar e processar.... o que gera uma demanda por alta perfomance. E daí a importância da plataforma como Engine que te oferece gratuitamente essa infraestrutura. 
 ---
-#### Bases de dados
+#### Bases de dados 
+.pull-left[
+[IBGE](https://www.ibge.gov.br/geociencias/downloads-geociencias.html): Limites territoriais e censitários do Brasil
+
+[FBDS](http://geo.fbds.org.br/): Uso da terra, APP e hidrografia - Mata Atlântica e Cerrado
+
+[GeoBank](https://geosgb.cprm.gov.br/):	Dados geológicos do Brasil
+
+[Pastagem.org](https://atlasdaspastagens.ufg.br/):	Dados de pastagens e gado para o Brasil
+
+[CanaSat](http://www.dsr.inpe.br/laf/canasat/): Dados de cana-de-açúcar para o Brasil
+
+]
+
+.pull-right[
+[CSR Maps](https://maps.csr.ufmg.br/):	Diversos dados vetoriais e raster para o Brasil
+
+[Ecoregions](https://ecoregions.appspot.com/):	Dados de biorregiões e biomas do mundo
+
+[UN Biodiversity Lab](https://unbiodiversitylab.org/en/):	Diversas bases de dados para o mundo
+
+[Biodiversity Hotspots](https://zenodo.org/record/3261807#.YA8lpPv0nOY): Limites dos Hotspots de Biodiversidade
+
+[IUCN Red List of Threatened Species](https://www.iucnredlist.org/resources/spatial-data-download): Limites das distribuições das espécies para o mundo
+]
+
+---
+#### Bases de dados 
+.pull-left[
+[Map of Life (MOL)](https://mol.org/):	Dados da distribuição de espécies e outros dados para o mundo
+
+[Key Biodiversity Areas](https://www.keybiodiversityareas.org/kba-data/request):	Dados dos limites das Key Biodiversity Areas
+
+[HydroSHEDS](https://www.hydrosheds.org/):	Informações hidrológicas do mundo
+
+[Global Roads Inventory Project (GRIP)](https://www.globio.info/download-grip-dataset):	Dados de estradas do mundo
+
+]
+
+.pull-right[
+
+[Database of Global Administrative Areas (GADM)](https://gadm.org/):	Limites das áreas administrativas do mundo
+
+[Natural Earth](https://www.naturalearthdata.com/):	Diversos limites para o mundo
+
+[Protected Planet](https://www.protectedplanet.net/en):	Limites de áreas protegidas para o mundo
+
+[Global Biological Information Facility (GBIF)](https://www.gbif.org/):	Dados de ocorrências de espécies para o mundo
+
+]
+---
+#### Bases de dados 
+
+[Species Link](http://www.splink.cria.org.br/):	Dados de ocorrências de espécies para o Brasil
+
+[Global Invasive Species Information Network (GISIN)](http://www.gisin.org/):	Dados de ocorrências de espécies invasoras para o Mundo
+
+---
+#### Bases de dados 
+
 
 ---
 #### Estudos de caso
