@@ -120,13 +120,50 @@ knitr::include_graphics("images/res.png")
 <br>
 
 ---
-#### Principais pacotes 
+#### Pacotes
+.pull-left[
+[geobr](https://github.com/ipeaGIT/geobr#readme):	Carrega Shapefiles de Conjuntos de Dados Espaciais Oficiais do Brasil
 
-```{r res, echo=FALSE, out.width="62%", fig.align="center"}
-knitr::include_graphics("images/res.png")
-```
-???
-- Pra exemplificar isso essa figura mostra dados to tipo raster, dados matricias. E Basicamente é uma imagem composta por pixeis, onde cade pixel carrega uma informação, nesse caso aqui é informaçõa de temperatura, ou seja eu tenho valores de temperatura para cada pixel.  E numa resolução baixa/grosseira os pixeis são maiores, mas estão menor quantidade, ou seja eu vou ter poucos valores para serem analisados ou processados. Já um dados em alta resolução número de pixeis aumenta exponencialmente, e aí a gente passa a ter muito valores para analisar e processar.... o que gera uma demanda por alta perfomance. E daí a importância da plataforma como Engine que te oferece gratuitamente essa infraestrutura. 
+[rnaturalearth](https://github.com/ropensci/rnaturalearth):	Dados do mapa mundial da Natural Earth
+
+[geodata](https://github.com/rspatial/geodata)	Diversas bases de dados para o mundo
+
+[rworldmap](https://cran.r-project.org/web/packages/rworldmap/index.html): Visualização de dados globais
+
+[spData](https://jakubnowosad.com/spData/):	Conjuntos de dados para análise espacial
+
+]
+
+.pull-right[
+[osmdata](https://github.com/ropensci/osmdata)	Baixa e importa dados do OpenStreetMap
+
+[geonames](https://cran.r-project.org/web/packages/geonames/index.html):	Interface para o serviço da Web de consulta espacial ‘Geonames’
+
+[rgbif](https://www.gbif.org/tool/81747/rgbif):	Interface para o Global ‘Biodiversity’ Information Facility API
+
+[maptools](https://uribo.github.io/rpkg_showcase/spatial/maptools.html):	Ferramentas para lidar com objetos geoespaciais
+
+[marmap](https://cran.r-project.org/web/packages/marmap/index.html): Importar, traçar e analisar dados batimétricos e topográficos
+
+[oce](https://dankelley.github.io/oce/):	Fonte e processamento de dados oceanográficos
+]
+
+---
+#### Pacotes
+
+[OpenStreetMap](https://cran.r-project.org/web/packages/OpenStreetMap/index.html):	Acesso para abrir imagens raster de mapas de ruas
+
+[envirem](https://envirem.github.io/):	Geração de variáveis ENVIREM
+
+[sdmpredictors](https://github.com/lifewatch/sdmpredictors):	Conjuntos de dados preditor de modelagem de distribuição de espécies
+
+[ClimDown]():	Biblioteca de redução de escala do clima para a produção diária do modelo climático
+
+[rnoaa](https://github.com/ropensci/rnoaa): Dados meteorológicos ‘NOAA’ de R
+
+[RNCEP](https://cran.r-project.org/web/packages/RNCEP/index.html): Obtém, organiza e visualiza dados meteorológicos NCEP
+
+[smapr](https://github.com/ropensci/smapr): Aquisição e processamento de dados ativos-passivos (SMAP) de umidade do solo da NASA
 ---
 #### Bases de dados 
 .pull-left[
@@ -188,6 +225,59 @@ knitr::include_graphics("images/res.png")
 ---
 #### Bases de dados 
 
+.pull-left[
+
+[MapBiomas](https://mapbiomas.org/):	Uso e cobertura da terra para o Brasil (1985 a 2021)
+
+[USGS](https://www.usgs.gov/products/data):	Dados de diversos satélites livres para o mundo
+
+[SRTM](https://srtm.csi.cgiar.org/):	Dados de elevação para o mundo
+
+[Geoservice Maps](https://geoservice.dlr.de/web/maps):	Dados de elevação e florestas para o mundo
+
+[Global Forest Watch](https://www.globalforestwatch.org/): Dados de florestas para o mundo
+]
+
+.pull-right[
+
+[GlobCover](http://due.esrin.esa.int/page_globcover.php): Dados de uso e cobertura da terra para todo o planeta
+
+[Landcover](https://www.earthenv.org/landcover)	Dados de uso e cobertura da terra para todo o planeta
+
+[Global Human Footprint](https://wcshumanfootprint.org/):	Dados de pegada ecológica para o mundo
+
+[GHSL Global Human Settlement Layer](https://ghsl.jrc.ec.europa.eu/download.php):	Dados e ferramentas abertos e gratuitos para avaliar a presença humana no planeta
+]
+---
+#### Bases de dados 
+.pull-left[
+[Land-Use Harmonization (LUH2)](https://luh.umd.edu/data.shtml):	Dados atuais e previsões de uso da terra
+
+[EarthEnv](https://www.earthenv.org/):	Dados de cobertura da terra, nuvens, relevo e hidrografia
+
+[ESA Climate Change Initiative](https://climate.esa.int/en/odp/#/dashboard):	Arquivos globais de observação da Terra nos últimos 30 anos da Agência Espacial Europeia (ESA)
+
+[SoilGrids](https://soilgrids.org/):	Dados de solo para o mundo
+
+]
+
+.pull-right[
+[Global Wetlands](https://www2.cifor.org/global-wetlands/):	Dados de áreas úmidas para o mundo
+
+[Global Surface Water Explorer](https://global-surface-water.appspot.com/#):	Dados de águas superficiais para o mundo
+
+[MARSPEC](http://www.marspec.org/): Dados de condições do oceano para o mundo
+
+[Bio-ORACLE](https://www.bio-oracle.org/): Dados de condições do oceano para o mundo
+]
+---
+#### Bases de dados 
+
+[WorldClim](https://www.worldclim.org/): Dados climáticos para o mundo
+
+[CHELSA](https://chelsa-climate.org/): Dados climáticos para o mundo
+
+[Peloclim](): 
 
 ---
 #### Estudos de caso
