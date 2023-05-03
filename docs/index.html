@@ -102,9 +102,60 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
-
 ---
-#### Pacotes
+#### Pacotes de manipulação 
+.pull-left[
+[sf](https://r-spatial.github.io/sf/): (recurso simples) é o pacote mais popular para codificação de dados espaciais
+
+[stars](https://github.com/r-spatial/stars): Leitura, manipulação, escrita e plotagem de arrays espaço-temporais (raster e cubos de dados vetoriais) em 'R', usando ligações 'GDAL' fornecidas por 'sf' e ligações 'NetCDF' por 'ncmeta' e 'RNetCDF'.
+
+[shapefiles](https://cran.r-project.org/web/packages/shapefiles/index.html): funções para ler e escrever ESRI Shapefiles
+
+[rgeos](https://cran.r-project.org/web/packages/rgeos/index.html): Manipulação e consulta de geometrias espaciais usando o mecanismo de geometria GEOS
+
+[rgdal](https://cran.r-project.org/web/packages/rgdal/index.html): fornece ligações para a Geospatial Data Abstraction Library (GDAL)
+
+[maptools](https://cran.r-project.org/web/packages/maptools/index.html): é um conjunto popular de ferramentas para manipulação de dados geográficos
+
+
+]
+
+.pull-right[
+[raster](https://cran.r-project.org/web/packages/raster/index.html): para trabalhar com dados matriciais(raster). 
+
+[rgee](https://r-spatial.github.io/rgee/reference/rgee-package.html): pacote para acesso ao Google Earth Engine via R
+
+[terra](https://cran.r-project.org/web/packages/terra/index.html): Métodos para análise de dados espaciais com dados vetoriais e matriciais (rater)
+
+[ncdf4](https://cran.r-project.org/web/packages/ncdf4/index.html): manipulação de dados armazedados em formato NetCDF
+]
+---
+#### Pacotes de vizualização 
+.pull-left[
+[ggplot2](https://ggplot2.tidyverse.org/): Criar gráficos e mapas usando a "gramática dos gráficos"
+
+[ggspatial](https://cran.r-project.org/web/packages/ggmap/index.html): interação com do ggplot2 focado em dados geoespaciais.
+
+[ggmap](https://cran.r-project.org/web/packages/ggmap/index.html): braço do ggplot2 com acesso ao Google Maps (OpenStreetMap).
+
+[RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html): Usar esquemas de cores criados por Cynthia Brewer
+
+[tmap](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html): Mapeamento temático usando a sintaxe "gramática de gráficos"
+]
+
+.pull-right[
+[leaflet](https://rstudio.github.io/leaflet/): Criação de mapas web interativos usando o Leaflet
+
+[mapview](https://r-spatial.github.io/mapview/): Criação de visualizações espaciais interativas com janelas pop-up para dados de atributos
+
+[cartografia](https://cran.r-project.org/web/packages/cartography/index.html): Criação de representações cartográficas com elementos típicos do mapa
+
+[coroplethr](https://cran.r-project.org/web/packages/choroplethr/index.html): simplifica a produção de mapas coropléticos
+
+[viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html): Paletas de cores
+]
+---
+#### Pacotes bases de dados 
 .pull-left[
 [geobr](https://github.com/ipeaGIT/geobr#readme):	Carrega Shapefiles de Conjuntos de Dados Espaciais Oficiais do Brasil
 
@@ -133,7 +184,7 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 ]
 
 ---
-#### Pacotes
+#### Pacotes bases de dados 
 
 [OpenStreetMap](https://cran.r-project.org/web/packages/OpenStreetMap/index.html):	Acesso para abrir imagens raster de mapas de ruas
 
@@ -149,7 +200,7 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 
 [smapr](https://github.com/ropensci/smapr): Aquisição e processamento de dados ativos-passivos (SMAP) de umidade do solo da NASA
 ---
-#### Bases de dados 
+#### Bases de dados vatorias
 .pull-left[
 [IBGE](https://www.ibge.gov.br/geociencias/downloads-geociencias.html): Limites territoriais e censitários do Brasil
 
@@ -176,7 +227,7 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 ]
 
 ---
-#### Bases de dados 
+#### Bases de dados vetoriais
 .pull-left[
 [Map of Life (MOL)](https://mol.org/):	Dados da distribuição de espécies e outros dados para o mundo
 
@@ -200,14 +251,14 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 
 ]
 ---
-#### Bases de dados 
+#### Bases de dados vetoriais
 
 [Species Link](http://www.splink.cria.org.br/):	Dados de ocorrências de espécies para o Brasil
 
 [Global Invasive Species Information Network (GISIN)](http://www.gisin.org/):	Dados de ocorrências de espécies invasoras para o Mundo
 
 ---
-#### Bases de dados 
+#### Bases de dados  matriciais
 
 .pull-left[
 
@@ -233,7 +284,7 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 [GHSL Global Human Settlement Layer](https://ghsl.jrc.ec.europa.eu/download.php):	Dados e ferramentas abertos e gratuitos para avaliar a presença humana no planeta
 ]
 ---
-#### Bases de dados 
+#### Bases de dados matriciais
 .pull-left[
 [Land-Use Harmonization (LUH2)](https://luh.umd.edu/data.shtml):	Dados atuais e previsões de uso da terra
 
@@ -255,7 +306,7 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 [Bio-ORACLE](https://www.bio-oracle.org/): Dados de condições do oceano para o mundo
 ]
 ---
-#### Bases de dados 
+#### Bases de dados matriciais
 
 [WorldClim](https://www.worldclim.org/): Dados climáticos para o mundo
 
@@ -273,22 +324,15 @@ Formas geométricas (ex. pontos, linhas e polígonos) com tabelas de atributos a
 ---
 #### Referências
 
-- Aybar, C., Wu, Q., Bautista, L., Yali, R., &amp; Barja, A. (2020). rgee: An R package for interacting with Google Earth Engine. Journal of Open Source Software, 5(51), 2272.
+- [Geocomputation with R](https://geocompr.robinlovelace.net/)
 
-- [Documentação](https://cran.r-project.org/web/packages/rgee/vignettes/rgee01.html)
+- [Análises Ecológicas no R](https://analises-ecologicas.netlify.app/index.html)
 
-- [Tutorial](http://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/ex_rgee.html)
+- [Ciência de Dados em R](https://livro.curso-r.com/index.html)
 
-- [Repositório](https://github.com/r-spatial/rgee)
+- [Análise Espacial com R](https://www.dropbox.com/s/blgtp2bmpdghol7/AnaliseEspacialComR.pdf?dl=0)
 
-- [rgeeExtra](https://r-earthengine.com/rgeeExtra/), extensão para o rgee 
 
-- [rgee examples](https://csaybar.github.io/rgee-examples/)
-
-- [Código](https://github.com/Tai-Rocha/VI_SER_talk.github.io/blob/main/R/rgee_exemplos.R),estudos de caso
-???
- - Nas referências eu deixei vários conteúdos com informações mais detalhadas.
- - E agora eu vou pro R , mostrar um pouco o que dá pra fazer com o rgee.
 
 ---
 name: hello
@@ -307,57 +351,6 @@ class: middle, center, inverse
 [<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> @Tai_Rocha_](https://twitter.com/Tai_Rocha_)   
 [<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg> tairocha.netlify.app](https://tairocha.netlify.app/)
 
-???
-
-- Conta do Google com o Earth Engine ativado
-
-- Python &gt;= v3.5
-
-- EarthEngine Python API (Python package)
-
-???
-
-### Esse é o roteiro do código:
-1- Eu vou falar das instalações 
-2- Falerei também das funções que precisam ser executadas sempre inciarmos um seção no R/Rstudio e vou já aporveitar p/mostrar a sintaxe da pacote
-3- Termino com 3 estudos de caso. Su eu me prolongar vou me ater a 2 estudos de caso, mas eu está com estudos de caso. 
-
-### Sobre as instalações, existem dois requisitos:
-1- Conta no Google com Earth Engine ativado
-2- E também ter o Python instalado na sua máquina na versão &gt;= v3.5
-
-- Com esses requisitos, já se pode executar no R ou Rstudio com o install.packages rgee para primeira parte da instalação. No geral esse comando só é necessaŕio uma vez, pq uma vez instalado, ele fica na sua máquina. A menos que vc formate seu computador ou reinstale o R e situações do tipo. Inclusive eu não vou executar esse comando porque rgee já está instalado aqui na minha máquina.
-
-- Porém, pra conseguir usar plenamente o rgee, ou seja, usar todas funções, outras instalações são necessárias. E essas instalações se fazem com uma função do próprio rgee ee_install que no geral também só precisa ser executada uma vez. E também não vou executar esse comando. Mas só pra saber do que se trata, o ee_install cria um ambiente virtual phtyon para instalar as dependencias necessárias. E são elas Numpy e ee.
-
-- Detalhes sobre a instalaçao disponíveis nas referências da apresentação
-
-### Segunda parte
-Essa segunda parte é bem curtinha. É SÓ pra vocẽs terem em mente que existem algumas funções que precisamos executar sempre, nesse caso, a cada vez que você abre e inicia uma nova seção do R e Rstudio  
-
-o library é o mais óbvio porque carrega o pacote que já instalado, mas eu costumo usar a sintaxe rgee::seguido da função e isso dispensa o carregamente via library. Mas o usuário fica avonatde pra usar o que preferir.
-
-Então pra turma do library, além de carregar o pacote, sempre q inciar uma seção e for usar o rgee
-
-é de bom tom começar com rgee:: ee_chech... que vfará um check da dependecia em phtyon. Executando  esse comando, aqui esta tudo ok ele me diz q está tudo ok ... ou seja, teoricanete eu vou consegui usar todas a funções.
-
-O outro comando é ee_Initialize e esse aqui é orbigatŕoio cada vez vc abre ser R/Rstudio... você só vai conseguir usar o rgee com esse comando. Vamos dar uma olhada no que faz esse comando.... o ee-intitilaize nada mais é do que uma autenticação para autorizar o acesso do rgee aos serviços do Earth Engine, Google drive, google cloud ... e isso pq as opções para salvar os resultados das suas análises é via google drive ou cloud storage.
-
-Bom dito isso, vamos executar o comando para começar usar o rgee.
-quando está tudo verdinho é pq está tudo ok. Então podemos começar. 
-
-E eu vou começar mostrando a sintaxe do rgee.
-Você verão que todas as funções do rgee omeção com ee_  e como eu ja carreguei o pacote se eu digitar esse prefixo aparece essa caixa com todas as funções do pacote.
-
-Outra maneira como já mostrei é usando rgee:: e bovamente abre a caixa com todas as funções, mas observem que agora existe uma outra classe de função que começa com ee, na verdade veremos que é ee$ifrão. Mas só pra entender melhor a diferença o eeSifrão são as funções originais do Earth Engine, já as funções ee_ são nativamente em R.
-
-E só pra vocês verem aqui nesse exemplo ... essas funções tem instancias. Por exemploo Classifer que uma função para classifcação supervsionada...e aí vcê pode acessar diferntes classificadores por exemplo o maxente . e ai vcê entra com argumentos desse clafficador os parãmetros.
-
-o ee_ e como o pacote já está carregado e abre automaticamete a caixa mostrando todas as funções
-
-### E agora finalemnte chegamos nos estudos de caso onde veremos o uso do rgee na vida real e sua utilidade. 
-
-Alguns são exemplo da documentão outros são modifcados, mas exemplo sã exemplos que usei relamente nas minhas alíses pricnipamen o estudo de caso 1 .
 
 
     </textarea>
