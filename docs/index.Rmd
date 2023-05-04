@@ -70,7 +70,7 @@ class: middle, center
 ]
 ???
 
-Então, vou começar falando brevemente sobre o que é o Google Earth Engine, depois o rgee e o fluxo de trabalho do pacote, e fecho com estudos de caso no R
+Então vou começar falando...
 ---
 ## O que são dados geoespaciais ?
 
@@ -121,7 +121,7 @@ knitr::include_graphics("images/res.png")
 ---
 #### Pacotes de manipulação 
 .pull-left[
-[sf](https://r-spatial.github.io/sf/): (recurso simples) é o pacote mais popular para codificação de dados espaciais
+[sf](https://r-spatial.github.io/sf/): simmple feature é o pacote mais popular para codificação de dados espaciais
 
 [stars](https://github.com/r-spatial/stars): Leitura, manipulação, escrita e plotagem de arrays espaço-temporais (raster e cubos de dados vetoriais) em 'R', usando ligações 'GDAL' fornecidas por 'sf' e ligações 'NetCDF' por 'ncmeta' e 'RNetCDF'.
 
