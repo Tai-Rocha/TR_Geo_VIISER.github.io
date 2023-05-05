@@ -1,5 +1,5 @@
 ---
-title: "VI SER<br><br>  Manipulação e estatística básica de dados geoespaciais no R" 
+title: "VII SER<br><br>  Manipulação e estatística básica de dados geoespaciais no R" 
 author: "Tainá Rocha"
 role: Environmental and Biodiversity Data Scientist <br> Biologist | MSc. in Environmental biology | PhD. in Zoology 
 org: "  "
@@ -24,7 +24,7 @@ output:
 ---
 
 class: title-slide, left, middle
-background-image: url("images/GE.png")
+background-image: url("images/SER.png")
 background-position: 85% 50%
 background-size: 30%
 background-color: #F9F8F3
