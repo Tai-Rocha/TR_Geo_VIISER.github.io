@@ -3,6 +3,7 @@
 ## Manipulação e estatística básica de dados geoespaciais no R
 ## Autora: Tainá Rocha
 ## 24 - 26 Maio 2023
+## R version 4.3
 ################################################################
 
 # Pacotes/bibliotecas
@@ -110,7 +111,7 @@ mapmuniJOIN |>
   # Facets por ano
   facet_wrap(~YEAR, ncol = 4) +
   labs(title = "_",
-       #subtitle = "1997-2000",
+       #subtitle = "2013-2020",
        fill = "Ha")  +
   theme_void()
 

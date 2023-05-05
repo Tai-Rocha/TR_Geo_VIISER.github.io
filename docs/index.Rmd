@@ -328,7 +328,7 @@ knitr::include_graphics("images/res.png")
 
 [CHELSA](https://chelsa-climate.org/): Dados climáticos para o mundo
 
-[Peloclim](): 
+[PaleoClim](http://www.paleoclim.org/): Dados paleoclimáticos de alta resolução para uso em modelagem biológica e SIG
 
 ---
 #### Estudos de caso
